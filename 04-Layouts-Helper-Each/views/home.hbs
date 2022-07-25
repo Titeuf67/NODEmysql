@@ -1,0 +1,5 @@
+<h1>Titre page home</h1>
+
+{{#each (limit db 3)}}
+<p>{{@index}} | <b>Titre:</b> {{this.titre}} & <b>Price:</b> {{this.price}}</p>
+{{/each}}
